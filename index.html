@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>angelcore</title>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+height:100vh;
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:'Cormorant Garamond', serif;
+background:black;
+color:white;
+}
+
+video{
+position:fixed;
+right:0;
+bottom:0;
+min-width:100%;
+min-height:100%;
+object-fit:cover;
+filter:brightness(35%) blur(2px);
+z-index:-2;
+}
+
+.overlay{
+position:fixed;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.3);
+z-index:-1;
+}
+
+.card{
+width:340px;
+padding:40px;
+border-radius:30px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(14px);
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:
+0 0 25px rgba(255,255,255,0.15),
+0 0 60px rgba(255,255,255,0.08);
+text-align:center;
+}
+
+.pfp{
+width:95px;
+height:95px;
+border-radius:50%;
+margin:auto;
+margin-bottom:20px;
+background:url('https://pin.it/2U4lXs0s0.gif')
+background-size:cover;
+background-position:center;
+border:1px solid rgba(255,255,255,0.3);
+box-shadow:0 0 20px rgba(255,255,255,0.25);
+}
+
+h1{
+font-size:42px;
+font-weight:300;
+letter-spacing:3px;
+}
+
+.quote{
+margin-top:8px;
+font-size:15px;
+opacity:0.7;
+}
+
+.line{
+width:70%;
+height:1px;
+background:rgba(255,255,255,0.15);
+margin:25px auto;
+}
+
+a{
+display:block;
+margin-top:14px;
+text-decoration:none;
+color:white;
+font-size:17px;
+transition:0.3s;
+}
+
+a:hover{
+opacity:0.6;
+transform:scale(1.02);
+}
+
+.music{
+margin-top:25px;
+font-size:14px;
+opacity:0.7;
+}
+
+</style>
+</head>
+
+<body>
+
+<video autoplay muted loop>
+<source src="https://cdn.coverr.co/videos/coverr-clouds-and-sky-1560083331244?download=1080p" type="video/mp4">
+</video>
+
+<div class="overlay"></div>
+
+<div class="card">
+
+<div class="pfp"></div>
+
+<h1>deadmournin'</h1>
+
+<div class="quote">
+eternal silence ⋆ mourngrief
+</div>
+
+<div class="line"></div>
+
+<a href="https://discord.com/users/YOURID">
+✞ discord profile
+</a>
+
+<a href="https://open.spotify.com/track/ใส่ลิงก์เพลง">
+♫ spotify
+</a>
+
+<div class="music">
+
+</div>
+
+</div>
+
+<audio autoplay loop>
+<source src="เพลง.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
